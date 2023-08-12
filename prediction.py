@@ -4,11 +4,11 @@ import tensorflow as tf
 import numpy as np
 from keras.utils import load_img, img_to_array
 
-model_path = 'WeedClassifier.h5'
+model_path = 'py-ml-weed-detection\WeedClassifier.h5'
 
 model = tf.keras.models.load_model(model_path)
 
-test_image_directory = './dataset/prediction/'
+test_image_directory = 'py-ml-weed-detection\dataset\prediction'
 
 input_shape = (512, 512)
 
